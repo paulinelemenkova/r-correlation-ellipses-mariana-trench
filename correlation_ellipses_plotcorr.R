@@ -1,3 +1,19 @@
+# ============================================================================
+# Correlation ellipses (correlogram) of Mariana Trench factors in R
+#
+# This script produced figures in the peer-reviewed article:
+#   Lemenkova, P. (2018). R Scripting Libraries for Comparative Analysis of the
+#   Correlation Methods to Identify Factors Affecting Mariana Trench Formation.
+#   Journal of Marine Technology and Environment, 2, 35-42.
+#   DOI (figshare): https://doi.org/10.6084/m9.figshare.7434167
+#   arXiv:          https://arxiv.org/abs/1812.01099 (physics.geo-ph)
+#   HAL:            https://hal.archives-ouvertes.fr/hal-01992349
+#   Zenodo:         https://zenodo.org/record/2145302
+#   SSRN:           https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3296836
+#
+# Author: Polina Lemenkova  |  ORCID: 0000-0002-5759-1089
+# ============================================================================
+
 # шаг-1. вчитываем таблицу. делаем датафрейм.
 MDF <- read.csv("Morphology.csv", header=TRUE, sep = ",")
 MDF <- na.omit(MDF) 
